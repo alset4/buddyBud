@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { IconType } from 'react-icons';
 import { 
   FaInstagram, 
   FaTwitter, 
@@ -50,19 +51,19 @@ const FooterSection = () => {
             <h3 className="text-lg font-semibold text-gray-900">Business</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/help" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
+                <Link href="/business/claim" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
                   <MdHelp className="text-green-600" />
                   Claim a Store!
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
+                <Link href="/business/login" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
                   <FaPhoneAlt className="text-green-600" />
                   Business Login
                 </Link>
               </li>
               <li>
-                <Link href="/shipping" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
+                <Link href="/business/support" className="text-gray-600 hover:text-green-600 text-sm flex items-center gap-2">
                   <FaShippingFast className="text-green-600" />
                   Business Support
                 </Link>

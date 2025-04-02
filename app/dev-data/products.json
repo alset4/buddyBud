@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "_id": "1",
+      "Brand": "Good Bud",
+      "Title": "Purple Haze",
+      "Images": ["/products/purple-haze.jpg"],
+      "Verification": true,
+      "Description": "A classic sativa-dominant hybrid with sweet and earthy flavors.",
+      "Price": 60,
+      "Serving": "3.5g",
+      "views": 245,
+      "monthlyTrend": "+12%",
+      "stock": 50,
+      "category": "Flower"
+    },
+    {
+      "_id": "2",
+      "Brand": "Good Bud",
+      "Title": "OG Kush",
+      "Images": ["/products/og-kush.jpg"],
+      "Verification": true,
+      "Description": "A potent hybrid strain with a complex aroma profile.",
+      "Price": 55,
+      "Serving": "3.5g",
+      "views": 189,
+      "monthlyTrend": "+8%",
+      "stock": 35,
+      "category": "Flower"
+    },
+    {
+      "_id": "3",
+      "Brand": "Good Bud",
+      "Title": "Blue Dream",
+      "Images": ["/products/blue-dream.jpg"],
+      "Verification": true,
+      "Description": "A balanced hybrid offering full-body relaxation with gentle cerebral invigoration.",
+      "Price": 50,
+      "Serving": "3.5g",
+      "views": 320,
+      "monthlyTrend": "+15%",
+      "stock": 45,
+      "category": "Flower"
+    }
+  ],
+  "analytics": {
+    "overview": {
+      "monthlyViews": 12453,
+      "monthlyVisitors": 3242,
+      "monthlyViewsChange": "+12.5%",
+      "monthlyVisitorsChange": "+8.2%"
+    },
+    "topProducts": [
+      { "name": "Purple Haze", "views": 1234, "trend": "+12%" },
+      { "name": "OG Kush", "views": 1123, "trend": "+8%" },
+      { "name": "Blue Dream", "views": 987, "trend": "+5%" }
+    ],
+    "dailyVisits": [
+      { "date": "2025-03-27", "visits": 120 },
+      { "date": "2025-03-28", "visits": 145 },
+      { "date": "2025-03-29", "visits": 160 },
+      { "date": "2025-03-30", "visits": 178 },
+      { "date": "2025-03-31", "visits": 190 },
+      { "date": "2025-04-01", "visits": 205 },
+      { "date": "2025-04-02", "visits": 220 }
+    ],
+    "productPerformance": [
+      { "name": "Purple Haze", "views": 245, "revenue": 3600 },
+      { "name": "OG Kush", "views": 189, "revenue": 2750 },
+      { "name": "Blue Dream", "views": 320, "revenue": 4000 }
+    ],
+    "viewsByHour": [
+      { "hour": "00:00", "views": 25 },
+      { "hour": "04:00", "views": 15 },
+      { "hour": "08:00", "views": 45 },
+      { "hour": "12:00", "views": 95 },
+      { "hour": "16:00", "views": 115 },
+      { "hour": "20:00", "views": 85 }
+    ],
+    "recentActivity": [
+      { "time": "2 hours ago", "event": "New review on Purple Haze" },
+      { "time": "4 hours ago", "event": "Product view spike on OG Kush" },
+      { "time": "6 hours ago", "event": "Inventory alert for Blue Dream" }
+    ]
+  }
+}

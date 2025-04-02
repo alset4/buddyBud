@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { SignInButton, useAuth } from '@clerk/nextjs';
+import { IconType } from 'react-icons';
 import { FaLeaf } from 'react-icons/fa';
 import { MdWarning } from 'react-icons/md';
 

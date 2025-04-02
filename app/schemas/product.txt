@@ -1,0 +1,12 @@
+{
+  type Product {
+    _id: string;
+    Brand: string;
+    Title: string;
+    Images: string[];
+    Verification: boolean;
+    Description: string;
+    Price: number;
+    Serving: string;
+  }
+} 

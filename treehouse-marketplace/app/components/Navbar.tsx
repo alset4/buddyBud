@@ -1,12 +1,15 @@
+'use client';
+
 import Link from 'next/link';
-import { FiShoppingCart, FiSearch, FiUser } from 'react-icons/fi';
+import { FiShoppingCart, FiSearch } from 'react-icons/fi';
+import { SignInButton, UserButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 export default function Navbar() {
   return (
     <nav className="bg-white py-4 px-6 shadow-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center gap-8">
-          <Link href="/" className="text-xl font-semibold text-green-800">
+          <Link href="/" className="text-xl font-semibold text-leaves">
             weknowflower
           </Link>
           <div className="flex gap-4">
@@ -26,10 +29,16 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link href="/signin" className="flex items-center gap-2 text-gray-600 hover:text-green-800">
-            <FiUser />
-            Sign In
-          </Link>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/" />
+          </SignedIn>
+          <SignedOut>
+            <SignInButton mode="modal">
+              <button className="flex items-center gap-2 text-gray-600 hover:text-green-800">
+                Sign In
+              </button>
+            </SignInButton>
+          </SignedOut>
           <Link href="/cart" className="text-gray-600 hover:text-green-800">
             <FiShoppingCart />
           </Link>

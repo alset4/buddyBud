@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Providers from "./providers";
+import AgeVerification from "./components/AgeVerification";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -9,7 +11,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Treehouse Marketplace",
-  description: "Your trusted source for quality cannabis products",
+  description: "Your trusted source for quality THC-A products",
 };
 
 export default function RootLayout({
@@ -19,8 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="min-h-screen bg-gray-50 text-gray-900">
-        {children}
+      <body>
+        <Providers>
+          <AgeVerification />
+          {children}
+        </Providers>
       </body>
     </html>
   );
